@@ -1,0 +1,135 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    background-image: url(../assets/PokédexMain.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#modal-layer {
+    background-color: rgba(0, 0, 0, 0.226);
+    width: 100%;
+    height: 90%;
+    border-radius: 50px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: -1px 1px #6fe600;
+}
+
+#title-bar {
+    -webkit-app-region: drag;
+    height: 110px;
+    text-align: center;
+    line-height: 40px;
+    vertical-align: middle;
+    background-color: #f4030300;
+    padding: none;
+    margin: 0px;
+}
+
+#title {
+    position: fixed;
+    top: 0px;
+    left: 6px;
+    color:rgba(241, 241, 241, 0.637);
+}
+
+#title-bar-btns {
+    -webkit-app-region: no-drag;
+    position: fixed;
+    top: 3px;
+    left: 300px;
+}
+
+#image-window {
+    position: fixed;
+    top: 130px;
+    left: 80px;
+    border: 5px grey ridge;
+    width: 220px;
+    height: 150px;
+    border-radius: 5px;
+    background-color: aliceblue;
+    text-align: center;
+    /* margin: 25px; */
+}
+
+#pokemon-image {
+    height: 100%;
+}
+
+#pokemon-select {
+    position: fixed;
+    top: 290px;
+    left: 80px;
+    border: 5px grey ridge;
+    width: 230px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgb(11, 199, 42);
+    text-align: center;
+    font-size: large;
+    text-shadow: -1px 1px #a2fc4e;
+}
+
+option {
+    font-size: large;
+}
+
+#title-text {
+    padding-left: 30px;
+    font-size:xx-large;
+    color: black;
+}
+
+.contain {
+    padding-top: 5px;
+    height: 70px
+}
+
+#gen-select {
+    position: fixed;
+    top: 130px;
+    left: 460px;
+    width: 220px;
+    height: 150px;
+    /* border: 5px grey ridge; */
+    /* border-radius: 5px; */
+    /* background-color: rgb(11, 199, 42); */
+}
+
+.gen-button {
+    margin: 5px;
+    padding: 5px;
+    border: 2px rgb(2, 49, 4) solid;
+    background-color: rgb(11, 199, 42); 
+    border-radius: 5px;
+    font-size: medium;
+    font-weight: 600;
+    text-shadow: -1px 1px #a2fc4e;
+    /* background-image: linear-gradient(to bottom right, red, yellow); */
+}
+
+.gen-button:hover {
+    background-color: rgb(7, 150, 31); 
+    /* background-image: linear-gradient(to bottom right, rgb(2rgb(194, 194, 36), 34), rgb(248, 248, 229)); */
+}
+
+.gen-button:active {
+    background-color: rgb(14, 245, 53); 
+    /* background-image: linear-gradient(to bottom right, rgb(2rgb(194, 194, 36), 34), rgb(221, 221, 183)); */
+}
+
+.gen-button:focus,
+.gen-button:active:focus,
+.gen-button.active:focus,
+.gen-button.focus,
+.gen-button:active.focus,
+.gen-button.active.focus {
+  outline: none !important;
+}

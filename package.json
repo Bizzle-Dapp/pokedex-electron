@@ -1,0 +1,21 @@
+{
+  "name": "pokedex-electron",
+  "version": "1.0.0",
+  "description": "A Pokédex!",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^11.1.0",
+    "electron-reload": "^1.5.0",
+    "electron-reloader": "^1.1.0"
+  },
+  "dependencies": {
+    "custom-electron-titlebar": "^3.2.5"
+  }
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <meta charset="UTF-8">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    
+    <div id="title-bar">
+        <div id="title-bar-btns">
+            <button id="min-btn">-</button>
+            <button id="close-btn">x</button>
+        </div>
+    </div>
+
+    <div id="image-window">
+        <img id="pokemon-image" />
+    </div>
+    <select id="pokemon-select">
+    </select>
+    
+    <div id="gen-select">
+        <button id="gen-button-1" class="gen-button">Gen I</button>
+        <button id="gen-button-2" class="gen-button">Gen II</button>
+        <button id="gen-button-3" class="gen-button">Gen III</button>
+        <button id="gen-button-3" class="gen-button">Gen IV</button>
+        <button id="gen-button-3" class="gen-button">Gen V</button>
+        <button id="gen-button-3" class="gen-button">Gen VI</button>
+    </div>
+    
+    
+    
+    <!-- <div id="modal-layer">
+        <h1>Loading...</h1>
+    </div> -->
+    <script defer type="text/javascript">
+        require('./index.js')
+    </script>
+    <script defer type="text/javascript">
+        require('./pokeview.js')
+    </script>
+</body>
+</html>
