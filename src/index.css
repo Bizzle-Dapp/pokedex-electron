@@ -5,6 +5,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: oblique;
 }
 
 #modal-layer {
@@ -96,8 +97,9 @@ option {
     position: fixed;
     top: 130px;
     left: 460px;
-    width: 220px;
+    width: 260px;
     height: 150px;
+    text-align: center;
     /* border: 5px grey ridge; */
     /* border-radius: 5px; */
     /* background-color: rgb(11, 199, 42); */
@@ -132,4 +134,17 @@ option {
 .gen-button:active.focus,
 .gen-button.active.focus {
   outline: none !important;
+}
+
+#gen-label {
+    position: fixed;
+    display: block;
+    top: 150px;
+    left: 20px;
+    border: 4px grey ridge; 
+    border-radius: 5px;
+    background-color: rgba(199, 96, 11, 0);
+    width: 50px;
+    height: 20px;
+    padding-left: 2px;
 }
