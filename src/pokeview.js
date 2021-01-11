@@ -13,7 +13,6 @@ const init = async () => {
 
 module.exports = {
     onGenButtonClick: onGenButtonClick = (genLabel, genLimit, genOffset) => {
-    // Clear contexts of pokemonSelect
         let array = pokemonSelect.getElementsByClassName('pokemon-option');
         document.getElementById('gen-label').innerHTML = genLabel;
         let len = array.length;
@@ -21,9 +20,8 @@ module.exports = {
         {
             pokemonSelect.remove(array.item(i))
         }
-        // Add Gen 7
         populatePokemonSelect(genLimit, genOffset); 
-}
+    }
 }
 
 
