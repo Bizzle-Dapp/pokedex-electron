@@ -2,16 +2,31 @@ let {fetchAllPokemon, fetchPokemon} = require('./API/fetchPokemon');
 
 const pokemonImage = document.getElementById('pokemon-image');
 const pokemonSelect = document.getElementById('pokemon-select');
+const modalLayer = document.getElementById('modal-layer');
 
 const init = async () => {
     await populatePokemonSelect();
     pokemonSelect.addEventListener("change", (e) => {
         updatePokemonView(e.target.value);
     })
+    toggleModalLayer(true);
+}
+
+const toggleModalLayer = (isHidden) => {
+    if(isHidden)
+    {
+        modalLayer.style.visibility = 'hidden'; 
+
+    }
+    else
+    {
+        modalLayer.style.visibility = '';
+    }
 }
 
 module.exports = {
     onGenButtonClick: onGenButtonClick = (genLabel, genLimit, genOffset) => {
+        toggleModalLayer(false);
         let array = pokemonSelect.getElementsByClassName('pokemon-option');
         document.getElementById('gen-label').innerHTML = genLabel;
         let len = array.length;
@@ -40,6 +55,7 @@ const populatePokemonSelect = async (limit, offset) => {
         el.className = "pokemon-option";
         pokemonSelect.appendChild(el);
     });
+    toggleModalLayer(true);
 }
 
 const updatePokemonView = async (selectedPokemon) => {
