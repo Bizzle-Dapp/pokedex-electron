@@ -1,4 +1,3 @@
-
 let {fetchAllPokemon, fetchPokemon} = require('./API/fetchPokemon');
 
 const pokemonImage = document.getElementById('pokemon-image');
@@ -23,7 +22,6 @@ module.exports = {
         populatePokemonSelect(genLimit, genOffset); 
     }
 }
-
 
 const populatePokemonSelect = async (limit, offset) => {
     let result = await fetchAllPokemon(limit, offset);
@@ -50,7 +48,6 @@ const updatePokemonView = async (selectedPokemon) => {
     let response = await fetchPokemon(selectedPokemon.url)
     // console.log(JSON.parse(response));
     let pokemon = JSON.parse(response); 
-
     pokemonImage.src = pokemon.sprites.front_default;
 }
 
