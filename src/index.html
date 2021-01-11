@@ -22,18 +22,20 @@
     <select id="pokemon-select">
     </select>
     
+    <script defer type="text/javascript">
+        require('./pokeview.js')
+    </script>
+
     <div id="gen-select">
-        <button id="gen-button-1" class="gen-button">Gen I</button>
-        <button id="gen-button-2" class="gen-button">Gen II</button>
-        <button id="gen-button-3" class="gen-button">Gen III</button>
-        <button id="gen-button-4" class="gen-button">Gen IV</button>
-        <button id="gen-button-5" class="gen-button">Gen V</button>
-        <button id="gen-button-6" class="gen-button">Gen VI</button>
-        <button id="gen-button-7" class="gen-button">Gen VII</button>
-        <button id="gen-button-8" class="gen-button">Gen VIII</button>
+        <button id="gen-button-1" class="gen-button" onclick="onGenButtonClick('Gen 1',151, 0)">Gen I</button>
+        <button id="gen-button-2" class="gen-button" onclick="onGenButtonClick('Gen 2', 100, 151)">Gen II</button>
+        <button id="gen-button-3" class="gen-button" onclick="onGenButtonClick('Gen 3', 135, 251)">Gen III</button>
+        <button id="gen-button-4" class="gen-button" onclick="onGenButtonClick('Gen 4', 107, 386)">Gen IV</button>
+        <button id="gen-button-5" class="gen-button" onclick="onGenButtonClick('Gen 5', 156, 493)">Gen V</button>
+        <button id="gen-button-6" class="gen-button" onclick="onGenButtonClick('Gen 6', 72, 649)">Gen VI</button>
+        <button id="gen-button-7" class="gen-button" onclick="onGenButtonClick('Gen 7', 88, 721)">Gen VII</button>
+        <button id="gen-button-8" class="gen-button" onclick="onGenButtonClick('Gen 8', 88, 809)">Gen VIII</button>
     </div>
-    
-    
     
     <!-- <div id="modal-layer">
         <h1>Loading...</h1>
@@ -41,8 +43,6 @@
     <script defer type="text/javascript">
         require('./index.js')
     </script>
-    <script defer type="text/javascript">
-        require('./pokeview.js')
-    </script>
+    
 </body>
 </html>
