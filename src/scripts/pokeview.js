@@ -1,4 +1,4 @@
-let {fetchAllPokemon, fetchPokemon} = require('./API/fetchPokemon');
+let {fetchAllPokemon, fetchPokemon} = require('../API/fetchPokemon');
 
 const pokemonImage = document.getElementById('pokemon-image');
 const pokemonSelect = document.getElementById('pokemon-select');
